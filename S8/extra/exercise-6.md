@@ -7,7 +7,7 @@ De nuevo, tendremos una api local que deberemos ejecutar con json-server. La url
 
 En este caso vamos a realizar una batalla entre dos razas a elegir por el usuario. Por lo tanto, lo primero que
 deberíamos hacer es una petición a personajes para imprimir sus datos en la página web. Tanto nombre, como imágenes y
-estadisticas.
+estadísticas.
 
 Cuando el usuario elija dos personajes, aparecerá un botón que diga "Luchar!". Una vez que el usuario haga click en el
 botón luchar se realizarán una serie de tiradas de dados que decidirán que raza es la ganadora (puedes simular estas

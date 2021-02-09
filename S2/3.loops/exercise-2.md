@@ -1,4 +1,3 @@
-# Español
 Usa un foin para imprimir por consola los datos del alienigena.
 ```js
 const alien = {
