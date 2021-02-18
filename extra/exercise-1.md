@@ -1,4 +1,6 @@
-Dado el html ``exercise-1.html`` y el css`` exercise-1.css``, crea un archivo de javascript (recuerda que el javascript que
+##Memory game
+Dado el html ``exercise-1.html`` y el css`` exercise-1.css``, crea un archivo de javascript (recuerda que el
+ javascript que
  proporcionamos nosotros es el que contiene la solución propuesta) para crear un juego de memoria con
 los datos proporcionados por el siguiente array:
 
@@ -71,7 +73,7 @@ Este juego es el típico juego de memoria por pareja en el que tendremos que **s
  ocultan la misma imagen, la jugada será correcta** y, si por el contrario **las tarjetas son diferentes entre sí, sus
  imágenes se volverán a ocultar**.
  
- Para este juego, por lo tanto tendremos que realizar los siguientes pasos:
+##Pasos a seguir
  
  1.  Pintar un tablero con las doce imágenes del array y el `src` apuntando al svg de `public/exercise/universe.svg`. 
  Ten en cuenta que como es un juego de parejas, las imágenes y nombres están repetidas en el array.

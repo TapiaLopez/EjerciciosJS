@@ -1,3 +1,5 @@
+## Whack a mole
+
 Dado el html ``exercise-2.html`` y el css ``exercise-2.css``, crea un archivo de javascript (recuerda que el javascript que
  proporcionamos nosotros es el que contiene la solución propuesta) para crear un el típico juego de atrapar topos
  ...pero en este caso deberemos atrapar a Diglett!
@@ -9,7 +11,7 @@ Dado el html ``exercise-2.html`` y el css ``exercise-2.css``, crea un archivo de
    . Una vez que esto ocurra mostraremos una alerta al
     usuario con la puntuación obtenida.
   
-  Para cumplir con el ejercicio, las condiciones son:
+##Condiciones
   
   1. Digglet debe moverse a una posición aleatoria cada 0.5 segundos y poner el resto de casillas con la imagen
    predefinida de las pokeballs.
