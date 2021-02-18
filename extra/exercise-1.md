@@ -1,4 +1,4 @@
-Dado el html exercise-1.html y el css exercise-1.css, crea un archivo de javascript (recuerda que el javascript que
+Dado el html ``exercise-1.html`` y el css`` exercise-1.css``, crea un archivo de javascript (recuerda que el javascript que
  proporcionamos nosotros es el que contiene la solución propuesta) para crear un juego de memoria con
 los datos proporcionados por el siguiente array:
 
@@ -67,9 +67,9 @@ let cardArray = [
 ]
 ```
 
-Este juego es el típico juego de memoria por pareja en el que tendremos que seleccionar dos tarjetas y si ambas tarjetas
- ocultan la misma imagen, la jugada será correcta y, si por el contrario las tarjetas son diferentes entre sí, sus
- imágenes se volverán a ocultar.
+Este juego es el típico juego de memoria por pareja en el que tendremos que **seleccionar dos tarjetas y si ambas tarjetas
+ ocultan la misma imagen, la jugada será correcta** y, si por el contrario **las tarjetas son diferentes entre sí, sus
+ imágenes se volverán a ocultar**.
  
  Para este juego, por lo tanto tendremos que realizar los siguientes pasos:
  
