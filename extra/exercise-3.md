@@ -26,7 +26,7 @@ la imagen que cada persona tiene en la propiedad `.img` dentro
   coincidan afirmativamente con la comparación. Ej: Si el usuario selecciona la opción ``Yes`` de la pregunta ``Glasses
 tendremos que comprobar que el usuario seleccionado aleatoriamente por el juego tiene gafas...en caso de que las
  tenga. Deshabilitamos todos las personas que no tengan gafas y, en caso de que no la tenga, lo contrario. Para
-  deshabilitar te recomendamos que añadas el estilo `pointers-events: 'none'` y `opacity: '0.5'`. Deshabilita también
+  deshabilitar te recomendamos que añadas el estilo `pointers-events: 'none'` y `opacity: '0.2'`. Deshabilita también
    el botón al que el usuario ha hecho click con las mismas propiedades para que no pueda volver a
    darle. Finalmente, suma 1 al contador de pistas que estará en el `<span data-function="clueCount""`.
   5. Una vez hecho esto el usuario tendrá la capacidad de jugar hasta que decida que sabe quien es la persona

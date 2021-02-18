@@ -145,7 +145,7 @@ const persons = [
     }, {
         img: 'public/exercise-3/011-woman.svg',
         gender: 'Woman',
-        hairColor: 'Dark',
+        hairColor: 'Black',
         moustache: 'No',
         glasses: 'No',
         hatOrCap: 'No',
@@ -230,8 +230,8 @@ const persons = [
         glasses: 'No',
         hatOrCap: 'No',
         clothesColor: 'Red',
-        skinColor: 'Light',
-        longHair: 'Yes'
+        skinColor: 'Dark',
+        longHair: 'No'
     }, {
         img: 'public/exercise-3/020-man.svg',
         gender: 'Man',
@@ -498,7 +498,7 @@ const persons = [
 const boardGame$$ = document.querySelector('[data-function="boardGame"]');
 const questions$$ = document.querySelector('[data-function="questions"]');
 const clueCount$$ = document.querySelector('[data-function="clueCount"]');
-let persons$$ = [];
+let persons$$;
 let personToWin;
 
 startGame()
@@ -544,7 +544,7 @@ function clickedAnswer (questionKey, question) {
 }
 
 function disableHtmlNode (node) {
-    node.style.opacity = '0.5';
+    node.style.opacity = '0.2';
     node.style.pointerEvents = 'none';
 }
 
@@ -567,7 +567,8 @@ function checkFinalAnswer(person){
 
 function startGame () {
     clueCount$$.textContent = '0';
+    persons$$ = [];
+    randomPerson();
     createQuestions();
     createBoard();
-    randomPerson();
 }
