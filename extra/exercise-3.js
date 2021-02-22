@@ -27,7 +27,7 @@ const questionsType = [
     {
         title: 'Clothes color',
         key: 'clothesColor',
-        questions: ['Red', 'Orange', 'Green', 'White', 'Black', 'Pink', 'Red']
+        questions: ['Red', 'Orange', 'Green', 'White', 'Black', 'Pink']
     },
     {
         title: 'Skin color',
@@ -428,7 +428,7 @@ const persons = [
         hairColor: 'Black',
         moustache: 'Yes',
         glasses: 'No',
-        hatOrCap: 'Yes',
+        hatOrCap: 'No',
         clothesColor: 'Green',
         skinColor: 'Light',
         longHair: 'No'

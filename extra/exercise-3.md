@@ -69,7 +69,7 @@ const questionsType = [
     {
         title: 'Clothes color',
         key: 'clothesColor',
-        questions: ['Red', 'Orange', 'Green', 'White', 'Black', 'Pink', 'Red']
+        questions: ['Red', 'Orange', 'Green', 'White', 'Black', 'Pink']
     },
     {
         title: 'Skin color',
@@ -187,7 +187,7 @@ const persons = [
     }, {
         img: 'public/exercise-3/011-woman.svg',
         gender: 'Woman',
-        hairColor: 'Dark',
+        hairColor: 'Black',
         moustache: 'No',
         glasses: 'No',
         hatOrCap: 'No',
@@ -272,8 +272,8 @@ const persons = [
         glasses: 'No',
         hatOrCap: 'No',
         clothesColor: 'Red',
-        skinColor: 'Light',
-        longHair: 'Yes'
+        skinColor: 'Dark',
+        longHair: 'No'
     }, {
         img: 'public/exercise-3/020-man.svg',
         gender: 'Man',
@@ -470,7 +470,7 @@ const persons = [
         hairColor: 'Black',
         moustache: 'Yes',
         glasses: 'No',
-        hatOrCap: 'Yes',
+        hatOrCap: 'No',
         clothesColor: 'Green',
         skinColor: 'Light',
         longHair: 'No'
