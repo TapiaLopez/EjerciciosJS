@@ -6,10 +6,10 @@ for (let index = 0; index < alumns.length; index++) {
     const element = alumns[index];
     
     let approvedCount = 0;
-    approvedCount = element.T1 ? approvedCount++ : approvedCount;
-    approvedCount = element.T2 ? approvedCount++ : approvedCount;
-    approvedCount = element.T3 ? approvedCount++ : approvedCount;
-    alumns.isApproved = approvedCount >= 2 ? true : false;
+    approvedCount = element.T1 ? approvedCount + 1: approvedCount;
+    approvedCount = element.T2 ? approvedCount + 1 : approvedCount;
+    approvedCount = element.T3 ? approvedCount + 1 : approvedCount;
+    element.isApproved = approvedCount >= 2 ? true : false;
 }
 
 console.log(alumns);
