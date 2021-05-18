@@ -3,13 +3,17 @@ const alumns = [
 ]
 
 for (let index = 0; index < alumns.length; index++) {
-    const element = alumns[index];
-    
+     pepe = alumns[index];
+
     let approvedCount = 0;
-    approvedCount = element.T1 ? approvedCount + 1: approvedCount;
-    approvedCount = element.T2 ? approvedCount + 1 : approvedCount;
-    approvedCount = element.T3 ? approvedCount + 1 : approvedCount;
-    element.isApproved = approvedCount >= 2 ? true : false;
+    approvedCount = pepe.T1 ? approvedCount + 1 : approvedCount;
+    approvedCount = pepe.T2 ? approvedCount + 1 : approvedCount;
+    approvedCount = pepe.T3 ? approvedCount + 1 : approvedCount;
+    // approvedCount = pepe.T1 === true ? approvedCount + 1 : approvedCount;
+    // approvedCount = pepe.T2 === true ? approvedCount + 1 : approvedCount;
+    // approvedCount = pepe.T3 === true ? approvedCount + 1 : approvedCount;
+
+    pepe.isApproved = approvedCount >= 2 ? true : false;
 }
 
 console.log(alumns);

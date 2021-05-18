@@ -7,8 +7,10 @@ for (let index = 0; index < placesToTravel.length; index++) {
     }
 }
 
+
 console.log(placesToTravel);
 
+// DIFERENTE FORMA
 
 const placesToVisit = []
 
