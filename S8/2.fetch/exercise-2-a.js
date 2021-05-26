@@ -1,8 +1,10 @@
 const baseUrl = 'https://api.nationalize.io';
 
-const search = (event) => {
+const input$$ = document.querySelector('input');
+
+const search = () => {
     // const input$$ = event.target.previousElementSibling;
-    const input$$ = document.querySelector('input');
+    // const input$$ = document.querySelector('input');
 
     fetch(baseUrl + '?name=' + input$$.value).then(res => res.json()).then(res =>{
         console.log(res);

@@ -5,4 +5,3 @@ async function getCharacters () {
 }
 
 getCharacters();
-
