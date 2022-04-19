@@ -24,7 +24,7 @@ Si la raza tiene tiene por ejemplo este daño:
 `"damage": ["2d6","1d10","2d20"]`
 
 Significa que tendrá que lanzar 2 dados de 6 caras, 1 de 10 caras y 2 de 20 caras por turno. Para simular una tirada
-aleatoria de dados podéis utilizar el siguiente código ``Math.floor(Math.random() * 10);``. Donde 10 es el numero
+aleatoria de dados podéis utilizar el siguiente código ``Math.floor(Math.random() * 10) + 1;``. Donde 10 es el numero
 máximo del dado.
 
 Por cada dado, tendremos que comprobar si el resultado coincide con el valor de la propiedad .critic del personaje. En

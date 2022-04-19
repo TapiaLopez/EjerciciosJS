@@ -1,17 +1,17 @@
 const baseUrl = 'https://opentdb.com/api.php?type=multiple&amount=';
 let questionsAnswered = [];
 const gameBoard$$ = document.querySelector('[data-function="gameboard"]');
+const input$$ = document.querySelector('[data-function="questions-number"]');
 
 const startGame = () => {
     resetGame();
-    const input$$ = document.querySelector('[data-function="questions-number"]');
 
     fetch(baseUrl + input$$.value).then(res => res.json()).then(res => {
         createQuestions(res.results)
     })
 }
 
-const resetGame =() => {
+const resetGame = () => {
     questionsAnswered = [];
     gameBoard$$.innerHTML = '';
 }
@@ -24,18 +24,41 @@ const createQuestions = (questions) => {
         h4$$.textContent = question.question;
 
         gameBoard$$.appendChild(h4$$);
-        createAnwsers([question.correct_answer, ...question.incorrect_answers], question.correct_answer, index);
+        const shuffleArray = shuffle([question.correct_answer, ...question.incorrect_answers]);
+        createAnwsers(shuffleArray, question.correct_answer, index);
     }
+}
+
+function shuffle(a) {
+    for (let i = a.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [a[i], a[j]] = [a[j], a[i]];
+    }
+    return a;
 }
 
 const createAnwsers = (answers, correctAnswer, questionIndex) => {
     for (let index = 0; index < answers.length; index++) {
         const answer = answers[index];
         const p$$ = document.createElement('p');
+        p$$.setAttribute("data-answer", questionIndex)
+        p$$.classList.add("answer");
+
         p$$.textContent = answer;
-        p$$.addEventListener('click', () => { checkAnswer(answer, correctAnswer, questionIndex)})
+        p$$.addEventListener('click', (e) => {
+            markAnwser(e.target, questionIndex);
+            checkAnswer(answer, correctAnswer, questionIndex)
+        })
         gameBoard$$.appendChild(p$$);
     }
+}
+
+const markAnwser = (target, questionIndex) => {
+    const allAnwsers = document.body.querySelectorAll("[data-answer='" + questionIndex + "'")
+    for (const answer of allAnwsers) {
+        answer.classList.remove("marked")
+    }
+    target.classList.add('marked');
 }
 
 const checkAnswer = (answer, correctAnswer, questionIndex) => {
@@ -55,7 +78,7 @@ const checkGame = () => {
     }, { correctResult: 0, incorrectResult: 0 })
 
     const p$$ = document.createElement(`p`);
-    p$$.textContent = `You have ${results.correctResult} correct answers and ${results.incorrectResult} incorrect answers.` 
+    p$$.textContent = `You have ${results.correctResult} correct answers and ${results.incorrectResult} incorrect answers.`
     gameBoard$$.appendChild(p$$);
 }
 // IGUAL
@@ -82,5 +105,3 @@ button$.addEventListener('click', startGame);
 const checkButton$ = document.querySelector('[data-function="check-game"]');
 
 checkButton$.addEventListener('click', checkGame);
-
-
